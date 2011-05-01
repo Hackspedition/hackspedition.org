@@ -19,7 +19,7 @@ GEM
       sinatra-advanced-routes (~> 0.5.0)
     sinatra-sugar (0.5.0)
       monkey-lib (~> 0.5.0)
-    tilt (1.2.2)
+    tilt (~> 1.2.2)
 
 PLATFORMS
   ruby
