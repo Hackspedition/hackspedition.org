@@ -14,7 +14,3 @@ get '/stylesheets/*' do
   content_type 'text/css'
   sass '../styles/'.concat(params[:splat].join.chomp('.css')).to_sym
 end
-
-get '/:location' do
-  haml params[:location].to_sym
-end
