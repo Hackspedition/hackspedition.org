@@ -1,7 +1,7 @@
 source :rubygems
 source :gemcutter
 
-gem "sinatra"
+gem "sinatra", "~>1.2.1"
 gem "sinatra-reloader"
 gem "sinatra-content-for"
 gem "haml"
