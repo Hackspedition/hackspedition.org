@@ -11,10 +11,12 @@ get '/' do
 end
 
 get '/nyc' do
+  @title = "Hackspedition [NYC] New York City"
   haml :nyc
 end
 
 get '/vha' do
+  @title = "Hackspedition [VHA] Villahermosa"
   haml :vha
 end
 
