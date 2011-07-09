@@ -1,16 +1,16 @@
-!!! Strict
+!!! 5
 %html{ :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
     %title
       = @title || "Hackspediton - Let's hack together!"
-    %meta{ :'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }
+    %meta{ :'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }    
     %script{ :src => 'http://code.jquery.com/jquery-1.4.4.min.js', :type => 'text/javascript' }
     %link{:href => "http://fonts.googleapis.com/css?family=Lobster+Two:700&v2", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Mako&v2", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Lobster+Two:700&v2", :rel => "stylesheet", :type => "text/css"}/
-    
     = yield_content :head
   %body
+    
     = yield
     #footer
       %p The Hackspedition Brand is owned and powered by the Hackspedition Community. Please don't steal it.

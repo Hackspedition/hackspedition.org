@@ -10,6 +10,14 @@ get '/' do
   haml :index
 end
 
+get '/nyc' do
+  haml :nyc
+end
+
+get '/vha' do
+  haml :vha
+end
+
 get '/stylesheets/*' do
   content_type 'text/css'
   sass '../styles/'.concat(params[:splat].join.chomp('.css')).to_sym
