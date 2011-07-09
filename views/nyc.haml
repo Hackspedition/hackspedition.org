@@ -1,0 +1,27 @@
+- content_for :head do
+  %link{:rel => 'stylesheet', :href => '/stylesheets/event.css', :type => 'text/css'}
+
+#content
+  #heading
+    %h1 New York City
+    %p.name.nyc
+      %span hackspedition
+      %span> .nyc 
+  
+  #social
+    :plain
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Join us in New York for a weekend full of hacking and fun! #hxpn #nyc" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=164622310272549&amp;href=http%3A%2F%2Fhackspedition.org%2Fnyc&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+  #intro
+    %p What about a 4 day adventure in the concrete jungle? Join us for a weekend full of hacking, walks in the park, Broadway, yellow cabs and Brooklyn love. Hackspedition NYC is the perfect opportunity to get in touch with the thriving East Coast hacker and startup communities.
+  #dates
+    %h2 Dates
+    %p September 15th - 19th, 2011 
+  #subscribe
+    %h2 Subscribe to the newsgroup
+    %input.text{:type => 'type', :name => 'email', :value => ''}
+    %input.submit{:type => 'submit', :value => 'Subscribe'}
+  #program
+    %h2 Program
+    
+  #credits
