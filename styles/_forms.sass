@@ -4,7 +4,7 @@
 
 form 
   input, textarea, select, option, button
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif
+    font-family: "Mako", sans-serif
     font-size: 1em
     padding: 2px
 
@@ -24,6 +24,7 @@ form
   
   input.text, input.file, textarea 
     line-height: 1.3em
+    padding: 0.5em
   
   select
 
@@ -47,8 +48,8 @@ form
   input.submit, button.submit
     @include submit
     @include button-roundness
-    margin: 1em 0
-  
+    @include simplebutton
+    
   p.note
     color: $gray
     font-size: 0.85em

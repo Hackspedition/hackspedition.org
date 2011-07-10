@@ -19,9 +19,11 @@
     %p September 15th - 19th, 2011 
   #subscribe
     %h2 Subscribe to the newsgroup
-    %input.text{:type => 'type', :name => 'email', :value => ''}
-    %input.submit{:type => 'submit', :value => 'Subscribe'}
+    %form{:method => 'POST', :action => '/subscribe'}
+      %input.text{:type => 'type', :name => 'email', :value => ''}
+      %input.hidden{:type => 'hidden', :name => 'event', :value => 'nyc'}
+      %input.submit{:type => 'submit', :value => 'Subscribe'}
   #program
     %h2 Program
-    
+    %p TBA
   #credits

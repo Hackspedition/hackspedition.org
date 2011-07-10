@@ -188,7 +188,20 @@
   text-align: center
   @include round-corners($radius)
   padding: 10px 5px
-  
+
+@mixin simplebutton
+  text-align: center
+  background: $black url(/images/gradient_100px.png) repeat-x scroll 0 100%
+  text-decoration: none
+  @include round-corners(3px)
+  display: inline-block
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.25)
+  padding: 0.6em 0.9em
+  line-height: 1
+  color: $white
+  &:hover
+    background-color: darken($black,5)
+      
 @mixin button-roundness
   background-image: url('/images/bg_button_roundness.png')
   background-repeat: repeat-x
