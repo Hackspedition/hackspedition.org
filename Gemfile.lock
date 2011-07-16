@@ -2,8 +2,19 @@ GEM
   remote: http://rubygems.org/
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.6)
     backports (2.1.0)
+    dm-core (1.1.0)
+      addressable (~> 2.2.4)
+    dm-migrations (1.1.0)
+      dm-core (~> 1.1.0)
+    dm-serializer (1.1.0)
+      dm-core (~> 1.1.0)
+      fastercsv (~> 1.5.4)
+      json (~> 1.4.6)
+    fastercsv (1.5.4)
     haml (3.1.1)
+    json (1.4.6)
     monkey-lib (0.5.4)
       backports
     rack (1.2.2)
@@ -30,6 +41,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dm-core
+  dm-migrations
+  dm-serializer
   haml
   rdiscount
   sass
