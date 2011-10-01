@@ -1,57 +1,52 @@
 - content_for :head do
   %link{:rel => 'stylesheet', :href => '/stylesheets/event.css', :type => 'text/css'}
 
-#content
+#heading-container
   #heading
     %h1 New York City
     %p.name.nyc
       %span hackspedition
-      %span> .nyc 
-  
+      %span> .nyc
+    #dates
+      #starts 
+        #day Sep 15
+        #year 2011
+      #ends 
+        #day Sep 19
+        #year 2011 
+#content  
   #social
     :plain
       <a href="http://twitter.com/share" class="twitter-share-button" data-text="Join us in New York for a weekend full of hacking and fun! #hxpn #nyc" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <iframe src="http://www.facebook.com/plugins/like.php?app_id=164622310272549&amp;href=http%3A%2F%2Fhackspedition.org%2Fnyc&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
   #intro
-    %p What about a 4 day adventure in the concrete jungle? Join us for a weekend full of hacking, walks in the park, Broadway, yellow cabs and Brooklyn love. Hackspedition NYC is the perfect opportunity to get in touch with the thriving East Coast hacker and startup communities.
-  #dates
-    %h2 Dates
-    %p September 15th - 19th, 2011 
-  #subscribe
-    %h2 Subscribe to the newsgroup
-    %form{:method => 'POST', :action => '/subscribe'}
-      %input.text{:type => 'type', :name => 'email', :value => ''}
-      %input.hidden{:type => 'hidden', :name => 'event', :value => 'nyc'}
-      %input.submit{:type => 'submit', :value => 'Subscribe'}
+    %p Imagine five days of exploration and hacking in the city that never sleeps. In September 2011, 15 hackspeditioners visited some of the most iconic startups within the thriving NYC community, participated for more than 24 hours in the Foursquare Global Hackathon, attended	Maker Faire and discovered the city during a very exciting scavenger hunt.
+  #gallery
+    %img{:src => "/images/nyc/2011_3.jpg"}
+    %img{:src => "/images/nyc/2011_2.jpg"}
+    %img{:src => "/images/nyc/2011_4.jpg"}
+    %img{:src => "/images/nyc/2011_6.jpg"}
+    %img{:src => "/images/nyc/2011_5.jpg"}
+    %p.more 
+      %span View more pictures in
+      %a{:href => "http://www.flickr.com/photos/dfectuoso17/sets/72157627563183169/", :target => "blank"} this gallery.
+  #testimonial
+    %blockquote The talent and caliber of hackers who attended Hackspedition are bar none, and it was my honor as Sherpa to guide Hackspedition through the best of NYC's hacker and startup culture."
+    #author
+      %img{:src => "/images/nyc/aaron_rosenthal_50px.jpg"}
+      %p Aaron Rosenthal
+      %p Hackspedition NYC "Sherpa" 
+      
   #program
-    %h2 Program
     :markdown
-      ### Jueves 15 de septiembre
+      Hackspedition NYC took place from Sep 15 through Sep 19, 2011. During these days, hackspeditioners had the opportunity to interact with some of the brightest hackers and tech entrepreneurs from the NYC scene.
 
-      9pm - Cena de bienvenida y celebración de la Independencia de México con NY Hacker (http://nyhacker.org)
+      The weekend started with a delicious dinner at Yerba Buena, a must-visit if you're a lover of latin fusion cuisine. This was a great opportunity fro locals to mingle with guest participants, and to celebrate Mexican independence Day with some tasty margaritas.
 
-      ### Viernes 16 de septiembre
+      On Friday, Hackspedition went on a long, yet inspiring startup tour.Among the companies that opened their doors to the group were Aviary, Birchbox, Techstars, OnSwipe, Foursquare, Etsy, Datalot, Betaworks and Kickstarter.
 
-      A lo largo del día - Visitas a:
+      On Saturday, Hackspedition went to Maker Faire, one of the most important gatherings for DIY enthusiasts, hobbyists and hackers of all sorts. Nothing can go wrong when there's a gigantic dragon made out of junk on one side and an Arc Attack show on another. Later that day, the group showed up at the Foursquare Global Hackathon and developed a simple scavenger hunt app during almost 20 hours of non stop designing and coding.
 
-      - Foursquare
-      - TechStars
-      - Betaworks
-      - OnSwipe
-      - Bookish
-
-      ### Sábado 17 de septiembre
-
-      10am - Visita a [Maker Faire](http://makerfaire.com/newyork/2011/)
-      6pm - Foursquare Hackathon @ [General Assembly](http://www.generalassemb.ly/)
-
-      ### Domingo 18 de septiembre
-
-      A lo largo del día - Foursquare Hackathon @ General Aseembly
-      Por la noche - (opcional) Salida al [teatro en Broadway](http://www.youtube.com/watch?v=-pgZtzDj_7o)  
-
-      ### Lunes 19 de septiembre
-
-      A lo largo del día - Scavenger's hunt en Manhattan 
-      Por la noche - Fiesta de despedida
+      Finally, on Monday we had the opportunity to relax and enjoy the city. The scavenger hunt was the perfect opportunity to find some hidden spots and take lots of pictures. The activity ended just in time to go out for food and drinks, and to toast for another fantastic experience.
+      
   #credits

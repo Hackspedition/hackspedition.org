@@ -1,0 +1,8 @@
+#MacOSX
+*.DS_Store
+
+# SASS Cache
+*.sassc
+
+#DB
+*.database

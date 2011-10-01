@@ -136,6 +136,11 @@
   -webkit-box-shadow: $value
   box-shadow: $value
 
+@mixin text-shadow($value: 0px 1px 4px rgba(0,0,0,0.25))
+  -moz-text-shadow: $value  
+  -webkit-text-shadow: $value
+  text-shadow: $value
+    
 @mixin bg-glow($vertical_offset: 0)
   background-image: url("/images/bg_glow.png")
   background-repeat: no-repeat
