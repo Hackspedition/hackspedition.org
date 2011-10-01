@@ -1,0 +1,28 @@
+- content_for :head do
+  %link{:rel => 'stylesheet', :href => '/stylesheets/event.css', :type => 'text/css'}
+
+#content
+  #heading
+    %h1 Tabasco
+    %p.name.vha 
+      %span hackspedition
+      %span> .tab
+  #social
+    :plain
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Join us in Tabasco, Mexico for a weekend full of hacking and fun! #hxpn #vha" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=164622310272549&amp;href=http%3A%2F%2Fhackspedition.org%2Fvha&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+  #intro
+    %p What about a 4 day adventure in the rainforest? Join us for a weekend full of hacking, hikes to the most ancient Mayan ruins, trips along the Gulf's coastline, and some authentic Mexican catering. Hackspedition VHA is the perfect opportunity to get in touch with the thriving Southern Mexican hacker and startup communities.
+  #dates
+    %h2 Dates
+    %p November 2nd - 6th, 2011 
+  #subscribe
+    %h2 Subscribe to the newsgroup
+    %form{:method => 'POST', :action => '/subscribe'}
+      %input.text{:type => 'type', :name => 'email', :value => ''}
+      %input.hidden{:type => 'hidden', :name => 'event', :value => 'vha'}
+      %input.submit{:type => 'submit', :value => 'Subscribe'}
+  #program
+    %h2 Program
+    %p TBA
+  #credits
