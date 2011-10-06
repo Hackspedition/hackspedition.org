@@ -1,28 +1,61 @@
 - content_for :head do
   %link{:rel => 'stylesheet', :href => '/stylesheets/event.css', :type => 'text/css'}
+  %link{:rel => 'stylesheet', :href => '/stylesheets/upcoming.css', :type => 'text/css'}
 
-#content
+#heading-container
   #heading
     %h1 Tabasco
-    %p.name.vha 
+    %p.name.nyc
       %span hackspedition
       %span> .tab
+    #dates
+      #starts 
+        #day Nov 2
+        #year 2011
+      #ends 
+        #day Nov 6
+        #year 2011
+
+#content
   #social
     :plain
       <a href="http://twitter.com/share" class="twitter-share-button" data-text="Join us in Tabasco, Mexico for a weekend full of hacking and fun! #hxpn #vha" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <iframe src="http://www.facebook.com/plugins/like.php?app_id=164622310272549&amp;href=http%3A%2F%2Fhackspedition.org%2Fvha&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
   #intro
-    %p What about a 4 day adventure in the rainforest? Join us for a weekend full of hacking, hikes to the most ancient Mayan ruins, trips along the Gulf's coastline, and some authentic Mexican catering. Hackspedition VHA is the perfect opportunity to get in touch with the thriving Southern Mexican hacker and startup communities.
-  #dates
-    %h2 Dates
-    %p November 2nd - 6th, 2011 
+    :markdown
+      Have you ever hanged out with a bunch of hackers in one of the most amazing Mayan sites on the planet? No? That’s what we guessed.
+      Hackspedition Tabasco is your opportunity to do this and many other fun and productive things. It is also the perfect opportunity to live for some days side by side with likeminded people from very remote places.
+  #gallery
+    %img{:src => "/images/tabasco/2011_2_pre.jpg"}
+    %img{:src => "/images/tabasco/2011_1_pre.jpg"}
   #subscribe
-    %h2 Subscribe to the newsgroup
+    %h3 Do you want to participate? Subscribe to the newsgroup.
     %form{:method => 'POST', :action => '/subscribe'}
-      %input.text{:type => 'type', :name => 'email', :value => ''}
-      %input.hidden{:type => 'hidden', :name => 'event', :value => 'vha'}
+      %input.text{:type => 'type', :name => 'email', :value => '', :placeholder => "Your email address"}
+      %input.hidden{:type => 'hidden', :name => 'event', :value => 'tab'}
       %input.submit{:type => 'submit', :value => 'Subscribe'}
   #program
     %h2 Program
-    %p TBA
+    %h3 Wed 2/Nov
+    %p Welcome dinner: Dinner with all the attendees and local hackers and entrepreneurs that are hosting us.
+    %h3 Thu 3/Nov
+    :markdown
+      **El Futuro:** El [Futuro Conference](http://elfuturo.mx) is taking place during Thursday and Friday. El Futuro is one of the mayor web and digital media conferences in Mexico. We are attending the first day to enjoy some keynotes, but especially to know some of the local players and interact with the.
+    %h3 Fri 4/Nov
+    :markdown  
+      **Expedition to Palenque:** One of the most beautiful mayan sites on planet Earth, Palenque is just three hours away from Villahermosa, our basecamp. We are visiting for the day and we're spending the night in bungalows in the middle of the jungle. 
+    %h3 Sat 5/Nov
+    :markdown
+      **SuperHappyDevHouse:** Saturday is hack day. SuperHappyDevHouse is a party for hackers and thinkers, or put differently, a hackathon just for fun. It is a great opportunity to work on personal projects and learn from collaborating with others. 
+    %h3 Sun 6/Nov
+    :markdown
+      **Expedition to Kolemchen:** One of the most beautiful natural reserves in the state, Kolemchen is also a couple of hours away from Villahermosa. 
+  #getting_there
+    %h2 Getting there
+    %h3 From Mexico City
+    %p We have a sponsored bus that departing from Mexico City. The same bus will drive us during the Hackspedition and will return us to Mexico City by the end of the weekend. 
+    %h3 From Houston, TX
+    %p Continental Airlines operates a daily evening flight directly to Villahermosa, Tabasco.
   #credits
+    :markdown
+      Photos by [Ivanka Majic](http://www.flickr.com/photos/majic/6212212046/) and [Realidad Alterna](http://www.flickr.com/photos/ralterna/5977035304/)

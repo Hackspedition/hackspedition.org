@@ -48,7 +48,8 @@
     margin: 1em 0
     p
       font-size: 1.25em
-      margin-bottom: 0
+      &::last-child
+        margin-bottom: 0
   
   #social
     margin: 0 0 1em
@@ -99,14 +100,12 @@
         font-size: 0.8em
   
   #program
-    padding-bottom: 3em
-    margin-bottom: 3em
-    background: transparent url(/images/airplane.png) no-repeat scroll 50% 100%
     p
       font-size: 1.1em
-    
-  #subscribe
-    input.text
-      width: 15em
+  
+#footer
+  margin-top: 2em
+  background: transparent url(/images/airplane.png) no-repeat scroll 50% 0
+  padding-top: 4em
       
     
