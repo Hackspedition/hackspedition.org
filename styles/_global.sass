@@ -23,7 +23,7 @@ body
   
   h3
     color: $contrast
-    
+    margin-bottom: 0.5em
   ul
     list-style: circle inside
   ol
@@ -36,7 +36,15 @@ body
     text-decoration: none
     &:hover
       text-decoration: underline
-      
+
+#heading-container
+  background: #EEE url(/images/polaroid.png) repeat scroll 0 0
+  padding: 1.5em
+  @include box-shadow(inset 0px -2px 4px rgba(0, 0, 0, 0.2))
+  #heading
+    @include centered(850px)
+    position: relative      
+
 #footer
   color: $gray
   text-align: center

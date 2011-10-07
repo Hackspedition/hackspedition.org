@@ -46,12 +46,17 @@ end
 
 get '/organize' do
   @title = "Organize a Hackspedition"
+  haml :organize
 end
 
 post '/subscribe' do
   @subscriber = Subscriber.create(params)
   halt 500 unless @subscriber.saved?
   redirect '/'
+end
+
+get '/team' do
+  
 end
 
 get '/:event/subscribers' do
